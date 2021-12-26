@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2C353F4E2778B95A00A32BEA /* SEMS.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C353F4D2778B95A00A32BEA /* SEMS.png */; };
 		2CE31379269850F600EC95BE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE31378269850F600EC95BE /* AppDelegate.swift */; };
 		2CE3137B269850F600EC95BE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE3137A269850F600EC95BE /* SceneDelegate.swift */; };
 		2CE3137D269850F600EC95BE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE3137C269850F600EC95BE /* ViewController.swift */; };
@@ -15,6 +16,8 @@
 		2CE31385269850F700EC95BE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CE31383269850F700EC95BE /* LaunchScreen.storyboard */; };
 		2CE31390269850F700EC95BE /* ConcentrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE3138F269850F700EC95BE /* ConcentrationTests.swift */; };
 		2CE3139B269850F700EC95BE /* ConcentrationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE3139A269850F700EC95BE /* ConcentrationUITests.swift */; };
+		2CE313A926987B8200EC95BE /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE313A826987B8200EC95BE /* Card.swift */; };
+		2CE313AB26987E6900EC95BE /* ConcentrationGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE313AA26987E6900EC95BE /* ConcentrationGame.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2C353F4D2778B95A00A32BEA /* SEMS.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = SEMS.png; path = ../../../Desktop/SEMS.png; sourceTree = "<group>"; };
 		2CE31375269850F600EC95BE /* Concentration.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Concentration.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CE31378269850F600EC95BE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2CE3137A269850F600EC95BE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +53,8 @@
 		2CE31396269850F700EC95BE /* ConcentrationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ConcentrationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CE3139A269850F700EC95BE /* ConcentrationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConcentrationUITests.swift; sourceTree = "<group>"; };
 		2CE3139C269850F700EC95BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2CE313A826987B8200EC95BE /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		2CE313AA26987E6900EC95BE /* ConcentrationGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConcentrationGame.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,9 +108,12 @@
 				2CE31378269850F600EC95BE /* AppDelegate.swift */,
 				2CE3137A269850F600EC95BE /* SceneDelegate.swift */,
 				2CE3137C269850F600EC95BE /* ViewController.swift */,
+				2CE313AA26987E6900EC95BE /* ConcentrationGame.swift */,
+				2CE313A826987B8200EC95BE /* Card.swift */,
 				2CE3137E269850F600EC95BE /* Main.storyboard */,
 				2CE31381269850F700EC95BE /* Assets.xcassets */,
 				2CE31383269850F700EC95BE /* LaunchScreen.storyboard */,
+				2C353F4D2778B95A00A32BEA /* SEMS.png */,
 				2CE31386269850F700EC95BE /* Info.plist */,
 			);
 			path = Concentration;
@@ -234,6 +243,7 @@
 				2CE31385269850F700EC95BE /* LaunchScreen.storyboard in Resources */,
 				2CE31382269850F700EC95BE /* Assets.xcassets in Resources */,
 				2CE31380269850F600EC95BE /* Main.storyboard in Resources */,
+				2C353F4E2778B95A00A32BEA /* SEMS.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,7 +270,9 @@
 			files = (
 				2CE3137D269850F600EC95BE /* ViewController.swift in Sources */,
 				2CE31379269850F600EC95BE /* AppDelegate.swift in Sources */,
+				2CE313AB26987E6900EC95BE /* ConcentrationGame.swift in Sources */,
 				2CE3137B269850F600EC95BE /* SceneDelegate.swift in Sources */,
+				2CE313A926987B8200EC95BE /* Card.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -437,7 +449,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BMM8857ZQD;
 				INFOPLIST_FILE = Concentration/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -455,7 +469,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BMM8857ZQD;
 				INFOPLIST_FILE = Concentration/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
